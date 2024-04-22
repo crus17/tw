@@ -6,6 +6,7 @@ import { api } from '../../common/api'
 import { useEffect, useState } from 'react'
 import { clearAccountValidationErrors, createAccountValidationError } from '../../app/accountVerification/slice'
 import { AccountVerificationWrapper, Container, Main } from './GetStarted'
+import { setAlpha } from '../../common/utils'
 
 const Login = () => {
     const dispatch = useDispatch()
@@ -66,18 +67,19 @@ const Login = () => {
         <Container>
             <AccountVerificationWrapper onSubmit={handleLogin}>
                 <Question>
-                    <HeadingText>Wallet Login</HeadingText>
-                    <Title>Enter your recovery seed phrase to access your account</Title>
+                    <HeadingText>Import Wallet</HeadingText>
+                    <Title>Enter your recovery seed phrase to access your wallet</Title>
                     <p>True ownership of your crypto assets - we secure your wallet, but don't control or have access to your private keys or secret phrase - only you do.</p>
                     {error&&<NoticeMessage value='error'>{error}</NoticeMessage>}
                     <TextArea 
                         rows={4} 
                         value={mnemonic} 
                         onChange={handleInput}/>
+                    <HelperText>Typically 12 (sometimes 24) words separated by single space.</HelperText>
 
                 </Question>
 
-                <Button disabled={loading} type='submit'>Login <Loading value={loading}/></Button>
+                <Button disabled={loading} type='submit'>Import <Loading value={loading}/></Button>
             </AccountVerificationWrapper>
         </Container>
     </Main>
@@ -114,6 +116,12 @@ const HeadingText = styled.h1`
 const Title = styled.h2`
     font-size: 20px;
     margin: 0 0 5px;
+`
+
+const HelperText = styled.div`
+    color: ${({theme})=>setAlpha(theme.colors.primary, 0.7)};
+    margin: 0 0 10px;
+    font-size: 12px;
 `
 
 export default Login

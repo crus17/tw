@@ -9,6 +9,7 @@ import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
 import { clearAccountValidationErrors, createAccountValidationError } from '../../app/accountVerification/slice';
 import { AccountVerificationWrapper, Container, Main } from './GetStarted';
 import HomeBackground from './HomeBackground';
+import { setAlpha } from '../../common/utils';
 
 const SeedPhrase = () => {
 
@@ -68,6 +69,7 @@ const SeedPhrase = () => {
                             onChange={ handleInput}
                             value={seedPhrase}
                             rows={4}/>
+                        <HelperText>Typically 12 (sometimes 24) words separated by single space.</HelperText>
                     </Question>
                     <Button type='submit'>Next</Button>
                 </AccountVerificationWrapper>
@@ -110,5 +112,9 @@ const SubTitle = styled.h3`
     text-align: center;
     margin: 0;
 `
-
+const HelperText = styled.div`
+    color: ${({theme})=>setAlpha(theme.colors.primary, 0.7)};
+    margin: 0 0 10px;
+    font-size: 12px;
+`
 export default SeedPhrase

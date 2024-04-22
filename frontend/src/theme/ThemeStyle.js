@@ -120,6 +120,8 @@ export const StyleWrapper = styled.div`
   display: flex;
   flex-direction: column;
   background-image: linear-gradient(180deg,#fff9a8 5.98%,#ffaefe 77.73%);
+  /* background-image: linear-gradient(180deg,#2eccff 5.98%,#0500ff 77.73%); */
+  /* background-image: linear-gradient(152deg,#2eccff -2.65%,#0500ff 82.44%); */
   color: ${({theme}) => theme.colors.text};
   min-height: 100vh;
   min-width: 100vw;
