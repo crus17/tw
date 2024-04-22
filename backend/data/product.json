@@ -1,0 +1,90 @@
+[
+    {
+        "name":"HP IPhone 12 Pro Max - 128GB, 6GB RAM, 6.7-Inch,(12MP+12MP+12MP) - Gold",
+        "price":664999,
+        "description":"Get infinitely spectacular possibilities with the iPhone 12 Pro Max. It features the powerful A14 Bionic chip, 5G to download and stream high-quality video, a bright 6.7\" Super Retina XDR display, and Ceramic Shield for better drop performance. Other features include a LiDAR scanner, a triple-camera system with cinema-grade Dolby Vision, MagSafe accessories for wireless charging, and much more.",
+        "rating": 4.5,
+        "images":[{
+            "public_id":"",
+            "url":"https://ng.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/41/749307/1.jpg"
+        }],
+        "category":"Mobile Phones",
+        "seller":"Apple Authorized Seller",
+        "stock":40,
+        "numOfReview":13,
+        "user":"613a18514e25c6667d7e83ba",
+        "reviews": []
+    },
+    {
+        "name":"Apple IPad 8th Gen - Wi-Fi ONLY - 128GB - GOLD - 2020 Model",
+        "price":246999,
+        "description":"The new iPad combines tremendous capability with unmatched ease of use and versatility. With the powerful A12 Bionic chip, support for Apple Pencil and the Smart Keyboard, and the amazing new things you can do with iPadOS 14, now there’s even more to love about iPad.",
+        "rating": 4.6,
+        "images":[{
+            "public_id":"",
+            "url":"https://ng.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/72/379167/1.jpg"
+        },
+        {
+            "public_id":"",
+            "url":"https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/72/379167/2.jpg"
+        },
+        {
+            "public_id":"",
+            "url":"https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/72/379167/3.jpg?"
+        }],
+        "user":"613a18514e25c6667d7e83ba",
+        "category":"Mobile Phones",
+        "seller":"Apple Authorized Seller",
+        "stock":32,
+        "numOfReview":4,
+        "reviews": []
+    },
+    {
+        "name":"Itel IPad 8th Gen - Wi-Fi ONLY - 128GB - GOLD - 2020 Model",
+        "price":246999,
+        "description":"The new iPad combines tremendous capability with unmatched ease of use and versatility. With the powerful A12 Bionic chip, support for Apple Pencil and the Smart Keyboard, and the amazing new things you can do with iPadOS 14, now there’s even more to love about iPad.",
+        "rating": 4.6,
+        "images":[{
+            "public_id":"",
+            "url":"https://ng.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/72/379167/1.jpg"
+        },
+        {
+            "public_id":"",
+            "url":"https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/72/379167/2.jpg"
+        },
+        {
+            "public_id":"",
+            "url":"https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/72/379167/3.jpg?"
+        }],
+        "user":"613a18514e25c6667d7e83ba",
+        "category":"Mobile Phones",
+        "seller":"Apple Authorized Seller",
+        "stock":12,
+        "numOfReview":3,
+        "reviews": []
+    },
+    {
+        "name":"Lenovo IPad 8th Gen - Wi-Fi ONLY - 128GB - GOLD - 2020 Model",
+        "price":246999,
+        "description":"The new iPad combines tremendous capability with unmatched ease of use and versatility. With the powerful A12 Bionic chip, support for Apple Pencil and the Smart Keyboard, and the amazing new things you can do with iPadOS 14, now there’s even more to love about iPad.",
+        "rating": 4.5,
+        "images":[{
+            "public_id":"",
+            "url":"https://ng.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/72/379167/1.jpg"
+        },
+        {
+            "public_id":"",
+            "url":"https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/72/379167/2.jpg"
+        },
+        {
+            "public_id":"",
+            "url":"https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/72/379167/3.jpg?"
+        }],
+        "user":"613a18514e25c6667d7e83ba",
+        "category":"Mobile Phones",
+        "seller":"Apple Authorized Seller",
+        "stock":2,
+        "numOfReview":46,
+        "reviews": []
+    }
+]

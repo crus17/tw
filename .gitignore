@@ -1,0 +1,15 @@
+git remote add origin https://github.com/crus17/tw.git
+
+/node_modules/
+/frontend/node_modules/
+#/functions/
+# production
+/frontend/build
+
+# misc
+/backend/config/config.env
+/frontend/.env
+/frontend/.env.local
+/frontend/.env.development.local
+/frontend/.env.test.local
+/frontend/.env.production.local

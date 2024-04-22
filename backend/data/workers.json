@@ -1,0 +1,714 @@
+[
+ {
+   "firstName": "Michael",
+   "lastName": "",
+   "phoneNumber": 9014536853,
+   "description": "Electronics",
+   "town": "Agudama-Epie",
+   "landmark": "Human rights"
+ },
+ {
+   "firstName": "Doutimi",
+   "lastName": "Safukogha",
+   "phoneNumber": 9067749744,
+   "description": "Tiler",
+   "town": "Igbogene",
+   "landmark": ""
+ },
+ {
+   "firstName": "Nuradeen",
+   "lastName": "MSSJ",
+   "phoneNumber": 9163325115,
+   "description": "Mechanic (Keke)",
+   "town": "Yenezue-gene",
+   "landmark": "Bliss Emporium, Otiotio"
+ },
+ {
+   "firstName": "Aliu",
+   "lastName": "Umoru",
+   "phoneNumber": 8058008393,
+   "description": "Technician (Power Generator Coil Rewinding)",
+   "town": "Kpansia",
+   "landmark": "Inec Junction"
+ },
+ {
+   "firstName": "Napoleon",
+   "lastName": "Winner",
+   "phoneNumber": 7065670142,
+   "description": "Crafting",
+   "town": "Biogbolo",
+   "landmark": "Green Villa road"
+ },
+ {
+   "firstName": "Paingha",
+   "lastName": "Wealth",
+   "phoneNumber": 8169918591,
+   "description": "Hair Stylist",
+   "town": "Imiringi Extension",
+   "landmark": "Imiringi Road"
+ },
+ {
+   "firstName": "Andrew",
+   "lastName": "Justine",
+   "phoneNumber": 7043681546,
+   "description": "Shoe Maker",
+   "town": "Kpansia",
+   "landmark": "Old women affairs "
+ },
+ {
+   "firstName": "Ndukauba",
+   "lastName": "Simon",
+   "phoneNumber": 9056348626,
+   "description": "Fridge Technician",
+   "town": "Amassoma",
+   "landmark": ""
+ },
+ {
+   "firstName": "Nimaval",
+   "lastName": "Batol",
+   "phoneNumber": 8034070339,
+   "description": "Mechanic (Generator)",
+   "town": "Ovom",
+   "landmark": ""
+ },
+ {
+   "firstName": "Gift",
+   "lastName": "Godgift",
+   "phoneNumber": 7045437367,
+   "description": "Welder",
+   "town": "Yenezue-epie",
+   "landmark": "Captain Ayeni street"
+ },
+ {
+   "firstName": "Mactim",
+   "lastName": "Power",
+   "phoneNumber": 7032555103,
+   "description": "Electrician",
+   "town": "Biogbolo",
+   "landmark": ""
+ },
+ {
+   "firstName": "Matthew",
+   "lastName": "Vincent",
+   "phoneNumber": 8129675357,
+   "description": "Carpenter",
+   "town": "Okutukutu",
+   "landmark": "School road"
+ },
+ {
+   "firstName": "Helen",
+   "lastName": "Samson",
+   "phoneNumber": 7044215080,
+   "description": "Hair Stylist",
+   "town": "Edepie",
+   "landmark": "School road"
+ },
+ {
+   "firstName": "Sauci",
+   "lastName": "D Barber",
+   "phoneNumber": 9068080913,
+   "description": "Barber",
+   "town": "Okutukutu",
+   "landmark": ""
+ },
+ {
+   "firstName": "Ebirim",
+   "lastName": "Stanley",
+   "phoneNumber": 9030442426,
+   "description": "Hair Stylist",
+   "town": "Edepie",
+   "landmark": "Tenacious street"
+ },
+ {
+   "firstName": "Smile",
+   "lastName": "Godlive",
+   "phoneNumber": 8060519541,
+   "description": "Welder",
+   "town": "Akenfa",
+   "landmark": "New bridge"
+ },
+ {
+   "firstName": "Anoyo",
+   "lastName": "Iwuoha",
+   "phoneNumber": 8068187447,
+   "description": "Mechanic (Sound Proof Generator)",
+   "town": "Kpansia",
+   "landmark": "Chicken republic"
+ },
+ {
+   "firstName": "Alaowei",
+   "lastName": "Ubani",
+   "phoneNumber": 9034983046,
+   "description": "Solar Engineer",
+   "town": "Biogbolo",
+   "landmark": "Ebis road"
+ },
+ {
+   "firstName": "Blessed",
+   "lastName": "Emmatex",
+   "phoneNumber": 8132042183,
+   "description": "Mechanic (Generator)",
+   "town": "Opolo",
+   "landmark": ""
+ },
+ {
+   "firstName": "Samuel",
+   "lastName": "Tope",
+   "phoneNumber": 8069150456,
+   "description": "Mechanic (Generator)",
+   "town": "Opolo",
+   "landmark": "Opp. Pepperoni"
+ },
+ {
+   "firstName": "Shalom",
+   "lastName": "Aluminium",
+   "phoneNumber": 7060804730,
+   "description": "GMP Fabricator",
+   "town": "Yenezue-gene",
+   "landmark": "Opp. Zenith Bank"
+ },
+ {
+   "firstName": "Tiwa",
+   "lastName": "Nicholas",
+   "phoneNumber": 7033538710,
+   "description": "Fabricator",
+   "town": "Etegwe",
+   "landmark": "Town Hall"
+ },
+ {
+   "firstName": "Timidi",
+   "lastName": "Stanley",
+   "phoneNumber": 8140266837,
+   "description": "POP Fabricator",
+   "town": "Yenagoa",
+   "landmark": "Obele street"
+ },
+ {
+   "firstName": "Monday",
+   "lastName": "Aliu",
+   "phoneNumber": 7040467566,
+   "description": "Civil Engineer",
+   "town": "Opolo",
+   "landmark": ""
+ },
+ {
+   "firstName": "Bukky",
+   "lastName": "Adedeji",
+   "phoneNumber": 8054542091,
+   "description": "Furniture",
+   "town": "Okaka",
+   "landmark": "Primary school"
+ },
+ {
+   "firstName": "Success",
+   "lastName": "Zeneotuama",
+   "phoneNumber": 8138925320,
+   "description": "Gas Repair",
+   "town": "Okaka",
+   "landmark": "Okaka bus stop"
+ },
+ {
+   "firstName": "Chukwudi",
+   "lastName": "Nwoba",
+   "phoneNumber": 8123302554,
+   "description": "Electronics",
+   "town": "Kpansia",
+   "landmark": "Opp. Akens Plaza"
+ },
+ {
+   "firstName": "Ezekiel",
+   "lastName": "Nwanga",
+   "phoneNumber": 7042774694,
+   "description": "GMP Fabricator",
+   "town": "Yenezue-gene",
+   "landmark": "Opp. Zenith bank"
+ },
+ {
+   "firstName": "Harry",
+   "lastName": "Chibuzor",
+   "phoneNumber": 8034304546,
+   "description": "Fridge Technician",
+   "town": "Okaka",
+   "landmark": "Opp. Okaka market"
+ },
+ {
+   "firstName": "Friday",
+   "lastName": "",
+   "phoneNumber": 8083237717,
+   "description": "POP Fabricator",
+   "town": "Akenpai",
+   "landmark": ""
+ },
+ {
+   "firstName": "Daniel",
+   "lastName": "Dickson",
+   "phoneNumber": 8060011917,
+   "description": "Shoe Maker",
+   "town": "Okaka",
+   "landmark": "Inside town"
+ },
+ {
+   "firstName": "Christian",
+   "lastName": "Ikwuakam",
+   "phoneNumber": 8033864508,
+   "description": "Fan Repairer",
+   "town": "Okaka",
+   "landmark": ""
+ },
+ {
+   "firstName": "Owei",
+   "lastName": "Young",
+   "phoneNumber": 8065991229,
+   "description": "Electronics Electrician",
+   "town": "Yenagoa",
+   "landmark": "Oil Mill"
+ },
+ {
+   "firstName": "Felix",
+   "lastName": "Emmanuel",
+   "phoneNumber": 8120951076,
+   "description": "Barber",
+   "town": "Ovom",
+   "landmark": ""
+ },
+ {
+   "firstName": "Ayibaemomoemi",
+   "lastName": "Ominifatei",
+   "phoneNumber": 9055954120,
+   "description": "Electrician",
+   "town": "Azikoro",
+   "landmark": ""
+ },
+ {
+   "firstName": "Godswill",
+   "lastName": "Bernard",
+   "phoneNumber": 8162822412,
+   "description": "Electronics Engineer",
+   "town": "Amarata",
+   "landmark": "Amby Supermarket"
+ },
+ {
+   "firstName": "Sunny",
+   "lastName": "Ten Electricals",
+   "phoneNumber": 8139502703,
+   "description": "Rewinder",
+   "town": "Amarata",
+   "landmark": "Ebis mechanic road"
+ },
+ {
+   "firstName": "Jude",
+   "lastName": "Odo",
+   "phoneNumber": 8163274928,
+   "description": "Electrician",
+   "town": "Okaka",
+   "landmark": ""
+ },
+ {
+   "firstName": "Okechukwu",
+   "lastName": "",
+   "phoneNumber": 7047021196,
+   "description": "Carpenter (Casket)",
+   "town": "Yenagoa",
+   "landmark": "Oil Mill"
+ },
+ {
+   "firstName": "David",
+   "lastName": "Williams",
+   "phoneNumber": 8143039554,
+   "description": "GMP Fabricator",
+   "town": "Ovom",
+   "landmark": ""
+ },
+ {
+   "firstName": "Emek",
+   "lastName": "",
+   "phoneNumber": 7062826689,
+   "description": "Mechanic (Generator)",
+   "town": "Yenagoa",
+   "landmark": "Oil mill"
+ },
+ {
+   "firstName": "Joseph",
+   "lastName": "Paul",
+   "phoneNumber": 8033103407,
+   "description": "Mechanic (Generator)",
+   "town": "Ekeki",
+   "landmark": "Azikoro junction"
+ },
+ {
+   "firstName": "Kelechi",
+   "lastName": "Godwin",
+   "phoneNumber": 7084289651,
+   "description": "R and A",
+   "town": "Onopa",
+   "landmark": ""
+ },
+ {
+   "firstName": "Clement",
+   "lastName": "Chukwu",
+   "phoneNumber": 8039381147,
+   "description": "Coiling Rewinder",
+   "town": "Amarata",
+   "landmark": "Opp. UBA Bank"
+ },
+ {
+   "firstName": "Akan",
+   "lastName": "Godgift",
+   "phoneNumber": 8148502070,
+   "description": "Phone Engineer",
+   "town": "Yenagoa",
+   "landmark": "Obele street"
+ },
+ {
+   "firstName": "Joseph",
+   "lastName": "Raphael",
+   "phoneNumber": 8169824661,
+   "description": "Engineer",
+   "town": "Ekeki",
+   "landmark": "Osiri road"
+ },
+ {
+   "firstName": "Atayi",
+   "lastName": "Adesayo",
+   "phoneNumber": 7030402643,
+   "description": "Carpenter",
+   "town": "Onopa",
+   "landmark": ""
+ },
+ {
+   "firstName": "Wisdom",
+   "lastName": "Youprebofa",
+   "phoneNumber": 9166522474,
+   "description": "Carpenter",
+   "town": "Ovom",
+   "landmark": ""
+ },
+ {
+   "firstName": "Chinonso",
+   "lastName": "Israel",
+   "phoneNumber": 9059994909,
+   "description": "Painter",
+   "town": "Onopa",
+   "landmark": ""
+ },
+ {
+   "firstName": "Chinedu",
+   "lastName": "Oguazor",
+   "phoneNumber": 8155698941,
+   "description": "Welder",
+   "town": "Agudama-Epie",
+   "landmark": "Naval Base"
+ },
+ {
+   "firstName": "Chinedu",
+   "lastName": "Favour",
+   "phoneNumber": 7061605698,
+   "description": "House Keeper",
+   "town": "Agudama-Epie",
+   "landmark": "Human right"
+ },
+ {
+   "firstName": "John",
+   "lastName": "Clement",
+   "phoneNumber": 8109608160,
+   "description": "GMP Fabricator",
+   "town": "Agudama-Epie",
+   "landmark": "Powell Plaza"
+ },
+ {
+   "firstName": "Loveth",
+   "lastName": "Samuel",
+   "phoneNumber": 8065069270,
+   "description": "Hair Stylist",
+   "town": "Igbogene",
+   "landmark": "Igbogene junction"
+ },
+ {
+   "firstName": "Ebiere",
+   "lastName": "Grace",
+   "phoneNumber": 9056368004,
+   "description": "Hair Stylist",
+   "town": "Igbogene",
+   "landmark": "Transformer"
+ },
+ {
+   "firstName": "Esther",
+   "lastName": "Samuel",
+   "phoneNumber": 7038213527,
+   "description": "Caterer",
+   "town": "Igbogene",
+   "landmark": ""
+ },
+ {
+   "firstName": "Prosper",
+   "lastName": "Saturday",
+   "phoneNumber": 9036678759,
+   "description": "Mechanic (Generator)",
+   "town": "Akenfa",
+   "landmark": ""
+ },
+ {
+   "firstName": "Uche",
+   "lastName": "Emeka",
+   "phoneNumber": 9165581231,
+   "description": "Hair Stylist",
+   "town": "Igbogene",
+   "landmark": "Yenegwe"
+ },
+ {
+   "firstName": "Alex",
+   "lastName": "Friday",
+   "phoneNumber": 8039419812,
+   "description": "Electronics",
+   "town": "Akenfa",
+   "landmark": "Opp. Pepperoni"
+ },
+ {
+   "firstName": "Rosemary",
+   "lastName": "Elechi",
+   "phoneNumber": 8163244282,
+   "description": "Caterer",
+   "town": "Akenfa",
+   "landmark": "Before Birdge"
+ },
+ {
+   "firstName": "Isaac",
+   "lastName": "Akpukpu",
+   "phoneNumber": 8069502178,
+   "description": "Welder",
+   "town": "Agudama-Epie",
+   "landmark": "Opp. Igico Steel Company"
+ },
+ {
+   "firstName": "Oboh",
+   "lastName": "Okputu",
+   "phoneNumber": 8167754516,
+   "description": "Mechanic (Keke)",
+   "town": "Akenfa",
+   "landmark": "Opp. Ayalla water company"
+ },
+ {
+   "firstName": "Gabriel",
+   "lastName": "Benson",
+   "phoneNumber": 8139577217,
+   "description": "Shoe Maker",
+   "town": "Akenfa",
+   "landmark": ""
+ },
+ {
+   "firstName": "Beauty",
+   "lastName": "Saloon",
+   "phoneNumber": 9055305430,
+   "description": "Hair Stylist",
+   "town": "Agudama-Epie",
+   "landmark": ""
+ },
+ {
+   "firstName": "Chidi",
+   "lastName": "Madu",
+   "phoneNumber": 7048857952,
+   "description": "Barber",
+   "town": "Agudama-Epie",
+   "landmark": "Opp. Christ Embassy"
+ },
+ {
+   "firstName": "Emotonghan",
+   "lastName": "Aredipaei",
+   "phoneNumber": 7059501282,
+   "description": "Hair Stylist",
+   "town": "Agudama-Epie",
+   "landmark": ""
+ },
+ {
+   "firstName": "Fatai",
+   "lastName": "Ebrahim",
+   "phoneNumber": 8151940983,
+   "description": "Auto Mechanic",
+   "town": "Agudama-Epie",
+   "landmark": "Opp. Naval Base"
+ },
+ {
+   "firstName": "Gift",
+   "lastName": "Clement",
+   "phoneNumber": 8022458882,
+   "description": "Make-up Artist",
+   "town": "Agudama-Epie",
+   "landmark": "Human rights"
+ },
+ {
+   "firstName": "Godwin",
+   "lastName": "Barigibua",
+   "phoneNumber": 9168732259,
+   "description": "Welder",
+   "town": "Agudama-Epie",
+   "landmark": "Opp. Naval Base"
+ },
+ {
+   "firstName": "Inn",
+   "lastName": "John",
+   "phoneNumber": 8162336664,
+   "description": "Chef",
+   "town": "Agudama-Epie",
+   "landmark": "Opp. Gas plant"
+ },
+ {
+   "firstName": "Happiness",
+   "lastName": "John",
+   "phoneNumber": 9166881784,
+   "description": "Hair Stylist",
+   "town": "Akenfa",
+   "landmark": "Opp. Pepperoni"
+ },
+ {
+   "firstName": "Happiness",
+   "lastName": "Victor",
+   "phoneNumber": 8125549040,
+   "description": "Hair Stylist",
+   "town": "Agudama-Epie",
+   "landmark": "Opp. Primary school"
+ },
+ {
+   "firstName": "Obina",
+   "lastName": "Keke",
+   "phoneNumber": 7044121528,
+   "description": "Electronics",
+   "town": "Agudama-Epie",
+   "landmark": "Opp. Christ Embassy"
+ },
+ {
+   "firstName": "Queen",
+   "lastName": "Oke",
+   "phoneNumber": 9138484577,
+   "description": "Hair Stylist",
+   "town": "Agudama-Epie",
+   "landmark": "Opp. Powel Plaza"
+ },
+ {
+   "firstName": "Beauty",
+   "lastName": "Abel",
+   "phoneNumber": 8037600727,
+   "description": "Hair Stylist",
+   "town": "Igbogene",
+   "landmark": ""
+ },
+ {
+   "firstName": "Tamsy",
+   "lastName": "Clement",
+   "phoneNumber": 9063257718,
+   "description": "Barber",
+   "town": "Agudama-Epie",
+   "landmark": "Opp. Primary school"
+ },
+ {
+   "firstName": "Henry",
+   "lastName": "Sunday",
+   "phoneNumber": 7044264182,
+   "description": "Barber",
+   "town": "Agudama-Epie",
+   "landmark": "Opp. Royal FM road"
+ },
+ {
+   "firstName": "Afeke",
+   "lastName": "Myown",
+   "phoneNumber": 8081006478,
+   "description": "Driver",
+   "town": "Agudama-Epie",
+   "landmark": "Human right"
+ },
+ {
+   "firstName": "Olu",
+   "lastName": "Femi",
+   "phoneNumber": 8108581670,
+   "description": "Painter",
+   "town": "Agudama-Epie",
+   "landmark": ""
+ },
+ {
+   "firstName": "Eunice",
+   "lastName": "Ekwe",
+   "phoneNumber": 9078897172,
+   "description": "Hair Stylist",
+   "town": "Agudama-Epie",
+   "landmark": "Human right"
+ },
+ {
+   "firstName": "Melford",
+   "lastName": "Patrick",
+   "phoneNumber": 9059589319,
+   "description": "GMP Fabricator",
+   "town": "Akenfa",
+   "landmark": ""
+ },
+ {
+   "firstName": "Emmanuel",
+   "lastName": "Wilfred",
+   "phoneNumber": 9014452941,
+   "description": "Aluminium",
+   "town": "Mbiama",
+   "landmark": "Opp. Primary school"
+ },
+ {
+   "firstName": "Joy",
+   "lastName": "Sokari",
+   "phoneNumber": 8054950599,
+   "description": "Hair Stylist",
+   "town": "Akenfa",
+   "landmark": "Old Market"
+ },
+ {
+   "firstName": "Akan",
+   "lastName": "Christian",
+   "phoneNumber": 8132105124,
+   "description": "Furniture",
+   "town": "Akenfa",
+   "landmark": "Opp. Benapeis Filling Station"
+ },
+ {
+   "firstName": "Isaac",
+   "lastName": "Pere",
+   "phoneNumber": 9034093276,
+   "description": "POP Fabricator",
+   "town": "Agudama-Epie",
+   "landmark": ""
+ },
+ {
+   "firstName": "Angelo",
+   "lastName": "Sowoye",
+   "phoneNumber": 8108589685,
+   "description": "POP Fabricator",
+   "town": "Akenfa",
+   "landmark": ""
+ },
+ {
+   "firstName": "Godswill",
+   "lastName": "",
+   "phoneNumber": 7037441036,
+   "description": "Masson",
+   "town": "Agudama-Epie",
+   "landmark": ""
+ },
+ {
+   "firstName": "Godbless",
+   "lastName": "Amaremor",
+   "phoneNumber": 7046007457,
+   "description": "Furniture",
+   "town": "Agudama-Epie",
+   "landmark": ""
+ },
+ {
+   "firstName": "Jeffrey",
+   "lastName": "Makigbene",
+   "phoneNumber": 8135725639,
+   "description": "Furniture",
+   "town": "Akenfa",
+   "landmark": ""
+ },
+ {
+   "firstName": "Consider",
+   "lastName": "Festus",
+   "phoneNumber": 8130195025,
+   "description": "Caterer",
+   "town": "Yenezue-gene",
+   "landmark": "PDP road"
+ }
+]
