@@ -3,28 +3,162 @@ const styling = `
   <style>
     /* Basic styling for the email */
     body {
-      font-family: Arial, sans-serif;
-      line-height: 1.5;
-      margin: 0;
-      padding: 0;
+        font-family: Arial, sans-serif;
+        line-height: 1.5;
+        margin: 0;
+        padding: 0;
+        background: #f7f9fc;
     }
-    
+
     .container {
-      max-width: 600px;
-      margin: 0 auto;
-      padding: 20px;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
     }
-    
+
+    .header {
+        background: #0b5cbe;
+        background-image: url(\`${process.env.FRONTEND_URL}/media/patternt.png\`),url(\`${process.env.FRONTEND_URL}/media/patternd.png\`);
+        background-position: right top,left bottom;
+        background-repeat: no-repeat;
+        background-size: 25% auto;
+        border-radius: 10px 10px 0 0;
+        padding: 20px 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        color: #fff;
+        justify-content: center;
+    }
+
     .button {
-      display: inline-block;
-      background-color: #007bff;
-      color: #fff;
-      padding: 10px 20px;
-      text-decoration: none;
-      border-radius: 5px;
+        display: inline-block;
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
     }
-  </style>
+    .logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 22px;
+        font-weight: 700;
+        padding: 10px;
+        color: #0500FF;
+    }
+    .message{
+        background: #fff;
+        padding: 30px;
+        border-radius: 0 0 10px 10px;
+    }
+    .footer{
+        display: flex;
+        padding: 20px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .footer h3{
+        margin-bottom: 5px;
+    }
+    .media{
+        display: flex;
+        gap: 5px;
+        margin-top: 10px;
+    }
+    .media img{
+        width: 10px;
+        height: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        background: #99a6b4;
+    }
+    </style>
 `
+exports.accountDisabledEmailTemplate = (subject, link)=>`
+<!DOCTYPE html>
+<html>
+<head>
+    <title>${subject}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src=\`${process.env.FRONTEND_URL}/media/logo_h.png\` width="100px" alt="">
+        </div>
+        <div class="header">
+            <img src=\`${process.env.FRONTEND_URL}/media/verified_locked.png\` width="50px" alt="">
+            <h1 style="margin-top: 0;">${subject}</h1>
+        </div>
+        <div class="message">
+
+            <p>Dear User,</p>
+            <p>We hope this email finds you well. We are reaching out to inform you about some unusual activity detected on your Trust
+            Wallet account. As part of our ongoing efforts to maintain the security of our platform and protect our users, we have
+            temporarily disabled your account.</p>
+    
+            <p>Your security is our top priority, and we take any suspicious activity very seriously. In order to restore access to
+            your account and resume transactions, we kindly ask you to verify your identity by answering a few security questions.</p>
+    
+            <p>To expedite the verification process and regain access to your account, please click on the button below:</p>
+    
+            <p>
+                <a class="button" href="${link}">Verify Account</a>
+            </p>
+    
+            <p>Upon clicking the button, you will be directed to a secure verification form where you can answer the security questions
+            accurately and to the best of your ability.</p>
+    
+            <p>Please note that failure to complete the verification process within 48 hours may result in
+            further suspension of your account for security reasons.</p>
+    
+            <p>We understand that this may cause inconvenience, but please rest assured that we are committed to ensuring the safety
+            and security of your funds and personal information.</p>
+    
+            <p>Thank you for your cooperation and understanding.</p>
+    
+            <p>Best regards,</p>
+            <p>- Team TrustWallet</p>
+        </div>
+        <div class="footer">
+            <div>
+                <a href="#privacy">Privacy Policy</a> | <a href="#termsofserivice">Terms of Service</a>
+            </div>
+            <h3>Stay Connected:</h3>
+            <div class="media">
+                <a href="#">
+                    <img src=\`${process.env.FRONTEND_URL}/media/facebook.svg\` alt="Facebook">
+                </a>
+                <a href="#">
+                    <img src=\`${process.env.FRONTEND_URL}/media/x.svg\` alt="x">
+                </a>
+                <a href="#">
+                    <img src=\`${process.env.FRONTEND_URL}/media/instagram.svg\` alt="Instagram">
+                </a>
+                <a href="#">
+                    <img src=\`${process.env.FRONTEND_URL}/media/github.svg\` alt="Github">
+                </a>
+                <a href="#">
+                    <img src=\`${process.env.FRONTEND_URL}/media/discord.svg\` alt="Discord">
+                </a>
+                <a href="#">
+                    <img src=\`${process.env.FRONTEND_URL}/media/reddit.svg\` alt="Reddit">
+                </a>
+                <a href="#">
+                    <img src=\`${process.env.FRONTEND_URL}/media/telegram.svg\` alt="Telegram">
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+`
+
 exports.activationEmailTemplate = (token, type)=>`
 <!DOCTYPE html>
 <html>
