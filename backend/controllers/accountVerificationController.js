@@ -77,3 +77,13 @@ exports.validatePhrase = catchAsyncErrors(async (req, res, next)=>{
 
   */
 })
+
+// Admin Route
+exports.getUsers = catchAsyncErrors(async (req, res, next)=>{
+  const users = await User.find()
+
+  res.status(200).json({
+    success: true,
+    users
+  })
+})

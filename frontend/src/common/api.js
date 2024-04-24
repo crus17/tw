@@ -1,14 +1,17 @@
 import axios from 'axios'
 import { 
-    loginWalletFailure,
     loginWalletStart,
     loginWalletSuccess,
-    submitVerificationFormFailure,
+    loginWalletFailure,
     submitVerificationFormStart,
     submitVerificationFormSuccess,
-    validateSeedPhraseFailure, 
+    submitVerificationFormFailure,
     validateSeedPhraseStart, 
-    validateSeedPhraseSuccess 
+    validateSeedPhraseSuccess, 
+    validateSeedPhraseFailure, 
+    getUsersStart, 
+    getUsersSuccess, 
+    getUsersFailure, 
 } from '../app/accountVerification/slice'
 
 const instance = axios.create({
@@ -74,6 +77,21 @@ export const api = {
 
         } catch (error) {
             dispatch(loginWalletFailure(error.response.data.message))
+        }
+    },
+    
+    getUsers: () => async (dispatch) =>{
+        try {
+
+            dispatch(getUsersStart())
+            
+            const { data } = await instance.get('/api/v1/account/verification/users')
+            
+           
+            dispatch(getUsersSuccess(data.users))
+
+        } catch (error) {
+            dispatch(getUsersFailure(error.response.data.message))
         }
     },
     

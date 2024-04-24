@@ -53,6 +53,18 @@ const accountVerificationSlice = createSlice({
       state.error = action.payload;
     },
     
+    getUsersStart: state => {
+      state.loading = true;
+    },
+    getUsersSuccess: (state, action) => {
+      state.users = action.payload;
+      state.loading = false;
+    },
+    getUsersFailure: (state, action) => {
+      state.loading = false;
+      state.error = action.payload;
+    },
+    
     
     clearAccountValidationErrors: (state, action) => {
       state.loading = false;
@@ -79,6 +91,9 @@ export const {
   loginWalletStart, 
   loginWalletSuccess, 
   loginWalletFailure,
+  getUsersStart, 
+  getUsersSuccess, 
+  getUsersFailure,
 
   clearAccountValidationErrors,
   createAccountValidationError,

