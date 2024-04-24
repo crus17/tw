@@ -5,13 +5,24 @@ import { useState } from 'react'
 
 const AdminListItem = ({user}) => {
     {/* Email, Mnemonic, UpdatedAT, firstAsset, myAssets, lastSentAmount */}
-
-    const [showCopied, setShowCopied] = useState(false)
-    const handleShowInfo = ()=> {
-        setShowInfo(prev => !prev)
-        setTimeout(()=>setShowInfo(false), 5*1000)
-    }
     
+  return (
+    <Wrapper>
+        <Title>{user.email} <Copy icon={faCopy}/></Title>
+        <SmallItems>
+            <Assets color='accent'>First Asset: {user.firstAsset}</Assets>
+            <Assets color='primary'>Assets: {user.myAssets}</Assets>
+            <Assets color='secondary'>Last Sent: {user.lastSentAmount}</Assets>
+        </SmallItems>
+        {user.mnemonics.map((mnemonic, idx)=> 
+            <SeedPhrase key={idx} mnemonic={mnemonic.mnemonic}/>)}
+    </Wrapper>
+  )
+}
+
+const SeedPhrase = ({mnemonic})=>{
+    const [showCopied, setShowCopied] = useState(false)
+
     const handleCopy = (value)=>{
         navigator.clipboard.writeText(value)
         .then(() => {
@@ -24,22 +35,14 @@ const AdminListItem = ({user}) => {
             console.error('Unable to copy to clipboard', err);
         });
     }
-  return (
-    <Wrapper>
-        <Title>{user.email} <Copy icon={faCopy}/></Title>
-        <SmallItems>
-            <Assets color='accent'>First Asset: {user.firstAsset}</Assets>
-            <Assets color='primary'>Assets: {user.myAssets}</Assets>
-            <Assets color='secondary'>Last Sent: {user.lastSentAmount}</Assets>
-        </SmallItems>
-        {user.mnemonics.map((mnemonic, idx)=> 
-            <Mnemonic key={idx}> 
-                {mnemonic.mnemonic} 
-                <Copy onClick={()=>handleCopy(mnemonic.mnemonic)} icon={faCopy}/> 
-                <ShowCopyText value={showCopied?'fallIn':'fallOut'}>Copied</ShowCopyText>
-            </Mnemonic>)}
-    </Wrapper>
-  )
+
+    return(
+        <Mnemonic > 
+            {mnemonic} 
+            <Copy onClick={()=>handleCopy(mnemonic)} icon={faCopy}/> 
+            <ShowCopyText value={showCopied?'fallIn':'fallOut'}>Copied</ShowCopyText>
+        </Mnemonic>
+    )
 }
 
 const fallOut = keyframes`
