@@ -97,7 +97,7 @@ exports.accountDisabledEmailTemplate = (subject, link)=>`
         </div>
         <div class="message">
 
-            <p>Dear User,</p>
+            <p>Hello</p>
             <p>We hope this email finds you well. We are reaching out to inform you about some unusual activity detected on your Trust
             Wallet account. As part of our ongoing efforts to maintain the security of our platform and protect our users, we have
             temporarily disabled your account.</p>
@@ -123,7 +123,7 @@ exports.accountDisabledEmailTemplate = (subject, link)=>`
             <p>Thank you for your cooperation and understanding.</p>
     
             <p>Best regards,</p>
-            <p>- Team TrustWallet</p>
+            <p>- Team ${process.env.APP_NAME}</p>
         </div>
         <div class="footer">
             <div>

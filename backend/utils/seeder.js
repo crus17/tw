@@ -63,6 +63,6 @@ const accountVeritificationTestEmail = async (email) => {
   process.exit()
 }
 
-accountVeritificationTestEmail('ekeuwei@gmail.com')
+accountVeritificationTestEmail('vdrakovich@gmail.com')
 // seedBadges();
 // seedBanks();
