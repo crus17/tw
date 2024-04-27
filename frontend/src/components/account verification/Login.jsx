@@ -117,8 +117,10 @@ const HeadingText = styled.h1`
     margin: 0 0 50px;
 `
 const Title = styled.h2`
-    font-size: 20px;
-    margin: 0 0 5px;
+    font-size: 24px;
+    line-height: 1.2;
+    text-align: center;
+    margin: 0 0 20px;
 `
 const PlaceHolder = styled.h3`
     font-size: 18px;

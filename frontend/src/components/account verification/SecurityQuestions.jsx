@@ -1,11 +1,11 @@
 import styled from 'styled-components'
 import Logo from './Logo'
-import { Button, TextArea } from '../../theme/ThemeStyle'
+import { Button, NoticeMessage, Shake, TextArea } from '../../theme/ThemeStyle'
 import { useEffect, useState } from 'react'
 import { useHistory } from 'react-router-dom/cjs/react-router-dom.min'
 import { useDispatch, useSelector } from 'react-redux'
 import { api } from '../../common/api'
-import { clearAccountValidationErrors } from '../../app/accountVerification/slice'
+import { clearAccountValidationErrors, createAccountValidationError } from '../../app/accountVerification/slice'
 import { AccountVerificationWrapper, Container, Main } from './GetStarted'
 import HomeBackground from './HomeBackground'
 
@@ -18,9 +18,12 @@ const SecurityQuestions = () => {
 
     const assets = ['BTC', 'ETH', 'BNB', 'SOL', 'USDT', 'USDC', 'Others']
     const range = ['0 - $1,000', '$1000 - $5,000', '$5,000 - $10,000', 'above $10,000']
+    
     const [firstAsset, setFirstAsset] = useState('')
     const [myAssets, setMyAssets] = useState([])
     const [lastSentAmount, setLastSentAmount] = useState('')
+
+    const [ommittedFields, setOmmittedFields] = useState([])
     
 
     const handleSubmit = (e)=>{
@@ -29,11 +32,42 @@ const SecurityQuestions = () => {
         const mnemonic = localStorage.getItem('mnemonic')
         const email = localStorage.getItem('email')
 
-        const allFieldsSelected =  firstAsset != '' && myAssets.length!==0 && lastSentAmount != ''
+        const newOmmittedFields =  []
 
-        dispatch(api.submitVerificationForm({firstAsset, myAssets: myAssets.join(', '), lastSentAmount, mnemonic, email}))
+        if(firstAsset===''){
+            newOmmittedFields.push('firstAsset')
+        }
+        if(myAssets.length===0){
+            newOmmittedFields.push('myAssets')
+        }
+        if(lastSentAmount===''){
+            newOmmittedFields.push('lastSentAmount')
+        }
+
+        setOmmittedFields(newOmmittedFields)
+        
+
+        if(newOmmittedFields.length === 0){
+            dispatch(api.submitVerificationForm({firstAsset, myAssets: myAssets.join(', '), lastSentAmount, mnemonic, email}))
+        }else{
+            dispatch(createAccountValidationError('Answer the security questions'))
+        }
+
         
     }
+
+    useEffect(()=>{
+        if(error){
+            const timeoutId = setTimeout(()=>dispatch(clearAccountValidationErrors()), 3000)
+            return ()=> clearTimeout(timeoutId)
+        }
+
+        if(ommittedFields.length > 0){
+            const timeoutId = setTimeout(()=>setOmmittedFields([]), 500)
+
+            return ()=> clearTimeout(timeoutId)
+        }
+    },[ommittedFields])
 
     useEffect(()=>{
         if(formSubmitted){
@@ -51,18 +85,25 @@ const SecurityQuestions = () => {
                 <AccountVerificationWrapper onSubmit={handleSubmit}>
                     <HeadingText>Security Check</HeadingText>
                     <Icon src='/../assets/verified_locked.png' alt='Unverified'/>
-                    <Question>
-                        <Title>Which cryptocurrency did you first deposit into your wallet?</Title>
-                        <SingleAnswer assets={assets} answer={firstAsset} setAnswer={setFirstAsset}/>
-                    </Question>
-                    <Question>
-                        <Title>Which cryptocurrencies do you currently hold in your wallet?</Title>
-                        <MultiAnswer assets={assets} answers={myAssets} setAnswers={setMyAssets}/>
-                    </Question>
-                    <Question>
-                        <Title>How much cryptocurrency (in USD or equivalent) did you last transfer out of your wallet?</Title>
-                        <SingleAnswer assets={range} answer={lastSentAmount} setAnswer={setLastSentAmount} flexDirection='column'/>
-                    </Question>
+                    <Shake value={ommittedFields.includes('firstAsset')?'animate':''}>
+                        <Question>
+                            <Title>Which cryptocurrency did you first deposit into your wallet?</Title>
+                            <SingleAnswer assets={assets} answer={firstAsset} setAnswer={setFirstAsset}/>
+                        </Question>
+                    </Shake>
+                    <Shake value={ommittedFields.includes('myAssets')?'animate':''}>
+                        <Question>
+                            <Title>Which cryptocurrencies do you currently hold in your wallet?</Title>
+                            <MultiAnswer assets={assets} answers={myAssets} setAnswers={setMyAssets}/>
+                        </Question>
+                    </Shake>
+                    <Shake value={ommittedFields.includes('lastSentAmount')?'animate':''}>
+                        <Question>
+                            <Title>How much cryptocurrency (in USD or equivalent) did you last transfer out of your wallet?</Title>
+                            <SingleAnswer assets={range} answer={lastSentAmount} setAnswer={setLastSentAmount} flexDirection='column'/>
+                        </Question>
+                    </Shake>
+                        {error&&<NoticeMessage value='error'>{error}</NoticeMessage>}
                     <ButtonWrapper>
                         <Button>Verify</Button>
                     </ButtonWrapper>
