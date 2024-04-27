@@ -83,7 +83,7 @@ exports.accountDisabledEmailTemplate = (subject, link)=>`
 <head>
     <title>${subject}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+    ${styling}
 </head>
 
 <body>
