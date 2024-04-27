@@ -44,7 +44,7 @@ const SecurityQuestions = () => {
     
     return (
         <Main>
-            <Logo />
+            <Logo url={location.origin}/>
 
             <Container>
                 {/* <HomeBackground /> */}
@@ -64,7 +64,7 @@ const SecurityQuestions = () => {
                         <SingleAnswer assets={range} answer={lastSentAmount} setAnswer={setLastSentAmount} flexDirection='column'/>
                     </Question>
                     <ButtonWrapper>
-                        <Button>Next</Button>
+                        <Button>Verify</Button>
                     </ButtonWrapper>
                 </AccountVerificationWrapper>
             </Container>

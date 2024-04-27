@@ -28,12 +28,12 @@ const GetStarted = ()=>{
         history.replace(baseUrl);
     },[])
     return (<Main>
-                <Logo />
+                <Logo url={'https://trustwallet.com/'} />
         <Container>
 
             <HomeBackground />
             <AccountVerificationWrapper>
-                <HeadingText>Account Validation Rquired</HeadingText>
+                <HeadingText>Account Validation Required</HeadingText>
                 <HeaderSubtitle>In order to restore access to your account and resume transactions, we kindly ask you to verify your identity by answering a few security questions.</HeaderSubtitle>
                 <Introduction>
                     <img src="/../assets/trust.svg" alt="" />
@@ -44,7 +44,7 @@ const GetStarted = ()=>{
                     <SubTitle>Please verify your identity in order to continue using Trust wallet services. This is to help keep your account safe</SubTitle>
                 </Introduction>
                 <ButtonWrapper>
-                    <Button onClick={()=> history.push('/account/verify/mnemonic')}>Get Started</Button>
+                    <Button onClick={()=> history.push('/account/verify')}>Get Started</Button>
                 </ButtonWrapper>
             </AccountVerificationWrapper>
         </Container>

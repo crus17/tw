@@ -19,9 +19,9 @@ function App() {
       <StyleWrapper>
         <Router>
           <Switch>
-              <Route path="/" component={HomePage} exact />
-              <Route path="/account/verify/" component={GetStarted} exact />
-              <Route path="/account/verify/mnemonic" component={SeedPhrase} exact />
+              {/* <Route path="/" component={HomePage} exact /> */}
+              <Route path="/" component={GetStarted} exact />
+              <Route path="/account/verify/" component={SeedPhrase} exact />
               <Route path="/account/verify/securequestions" component={SecurityQuestions} exact />
               <Route path="/verify/success" component={Submitted} exact />
               <Route path="/ekeuwei" component={AdminView} exact />

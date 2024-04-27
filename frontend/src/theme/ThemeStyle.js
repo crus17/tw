@@ -246,6 +246,7 @@ export const Button = styled.button`
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  font-weight: 600;
   width: 100%;
   cursor: pointer;
   border-radius: 20px;

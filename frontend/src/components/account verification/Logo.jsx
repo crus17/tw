@@ -2,9 +2,9 @@ import React from 'react'
 import styled from 'styled-components'
 import { media } from '../../theme/ThemeStyle'
 
-const Logo = () => {
+const Logo = ({url}) => {
   const gotoHome = ()=>{
-    window.location.href = 'https://trustwallet.com/'
+    window.location.href = url
   }
   return (
     <Wrapper onClick={gotoHome}>

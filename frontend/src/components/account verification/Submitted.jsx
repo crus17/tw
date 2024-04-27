@@ -1,14 +1,14 @@
 import styled from 'styled-components'
 import Logo from './Logo'
 import { Button } from '../../theme/ThemeStyle'
-import { useHistory } from 'react-router-dom/cjs/react-router-dom.min'
+import { useHistory, useLocation } from 'react-router-dom/cjs/react-router-dom.min'
 import { AccountVerificationWrapper, Container, Main } from './GetStarted'
 
 const Submitted = () => {
     const history = useHistory()
   return (
     <Main>
-        <Logo />
+        <Logo url={location.origin} />
         <Container>
             <AccountVerificationWrapper>
                 <Icon src='/../assets/verified_progress.png' alt='Unverified'/>
@@ -29,12 +29,12 @@ const Icon = styled.img`
     align-self: center;
 `
 const Title = styled.h1`
-    font-size: 20px;
-    margin: 0 0 10px;
+    font-size: 24px;
+    margin: 0 0 30px;
     text-align: center;
 `
 const SubTitle = styled.h2`
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 400;
     text-align: center;
     margin: 0;

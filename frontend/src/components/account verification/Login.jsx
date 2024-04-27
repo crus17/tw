@@ -7,6 +7,7 @@ import { useEffect, useState } from 'react'
 import { clearAccountValidationErrors, createAccountValidationError } from '../../app/accountVerification/slice'
 import { AccountVerificationWrapper, Container, Main } from './GetStarted'
 import { setAlpha } from '../../common/utils'
+import { useLocation } from 'react-router-dom/cjs/react-router-dom.min'
 
 const Login = () => {
     const dispatch = useDispatch()
@@ -24,7 +25,7 @@ const Login = () => {
         if(validLength){
             dispatch(api.loginWallet({mnemonic, email}))
         }else{
-            dispatch(createAccountValidationError('Invalid Seed Phrase'))
+            dispatch(createAccountValidationError('Invalid secret phrase'))
         }
     }
 
@@ -63,19 +64,21 @@ const Login = () => {
     },[isAuthenticated])
   return (
     <Main>
-        <Logo />
+        <Logo url={location.origin}/>
         <Container>
             <AccountVerificationWrapper onSubmit={handleLogin}>
                 <Question>
                     <HeadingText>Import Wallet</HeadingText>
-                    <Title>Enter your recovery seed phrase to access your wallet</Title>
-                    <p>True ownership of your crypto assets - we secure your wallet, but don't control or have access to your private keys or secret phrase - only you do.</p>
+                    <Title>True ownership of your crypto assets</Title>
+                    <SubTitle>We secure your wallet, but don't control or have access to your private keys or secret phrase - only you do.</SubTitle>
                     {error&&<NoticeMessage value='error'>{error}</NoticeMessage>}
+                    
+                    <PlaceHolder>Secret phrase</PlaceHolder>
                     <TextArea 
                         rows={4} 
                         value={mnemonic} 
                         onChange={handleInput}/>
-                    <HelperText>Typically 12 (sometimes 24) words separated by single space.</HelperText>
+                    <HelperText>Typically 12 (sometimes 18, 24) words separated by single space.</HelperText>
 
                 </Question>
 
@@ -117,11 +120,23 @@ const Title = styled.h2`
     font-size: 20px;
     margin: 0 0 5px;
 `
-
+const PlaceHolder = styled.h3`
+    font-size: 18px;
+    line-height: 1.2;
+    margin: 10px 0;
+    align-self: flex-start;
+`
+const SubTitle = styled.h3`
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    margin: 0 0 20px;
+`
 const HelperText = styled.div`
-    color: ${({theme})=>setAlpha(theme.colors.primary, 0.7)};
+    color: ${({theme})=>theme.colors.dark1};
     margin: 0 0 10px;
-    font-size: 12px;
+    text-align: center;
+    font-size: 14px;
 `
 
 export default Login
